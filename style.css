@@ -1,0 +1,15 @@
+body {
+    background-color: lightblue;
+}
+
+#updating {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    margin-top: 16%;
+    font-size: 24px;
+}
+
+#updatingpng {
+    margin-left: 38.5%;
+}
