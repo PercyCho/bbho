@@ -50,10 +50,19 @@ if (lastChar = "#") {
 */
 //make sure to fix...all of that
 
+var mode = localStorage.getItem('mode')
+
+if (mode = 'light'){
+	lightMode();
+}else{
+	darkMode();
+}
+
 function darkMode() {
 	document.getElementById("title").style.color = "white";
 	document.body.style.backgroundColor = "#040040";
 	document.getElementById("hometext").style.color = "lightgray";
+	document.getElementById("subtitle").style.color = "lightgray";
 	document.getElementById("footer").style.color = "lightgray";
 	document.getElementById("menu").style.color = "lightgray";
 	//code...
@@ -61,12 +70,14 @@ function darkMode() {
 	document.getElementById("darkmodebtn").style.backgroundColor = "white";
 	document.getElementById("darkmodebtn").onclick = lightMode;
 	document.getElementById("darkmodebtn").innerHTML = "Light Mode";
+	localStorage.setItem('mode', 'dark')
 }
 
 function lightMode() {
 	document.getElementById("title").style.color = "black";
 	document.body.style.backgroundColor = "lightblue";
 	document.getElementById("hometext").style.color = "black";
+	document.getElementById("subtitle").style.color = "black";
 	document.getElementById("footer").style.color = "black";
 	document.getElementById("menu").style.color = "black";
 	//more code...
@@ -74,4 +85,5 @@ function lightMode() {
 	document.getElementById("darkmodebtn").style.backgroundColor = "black";
 	document.getElementById("darkmodebtn").onclick = darkMode;
 	document.getElementById("darkmodebtn").innerHTML = "Dark Mode";
+	localStorage.setItem('mode', 'light')
 }

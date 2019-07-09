@@ -117,6 +117,15 @@ a#minecraftbar:hover span#minecraftip {
 	display: inline;
 }
 
+#subtitle {
+	font-family: Arial;
+	color: black;
+	font-size: 36px; 
+	margin: 30px 0;
+	width: 100%;
+	text-align: center;
+}
+
 #hometext {
 	font-family: Arial;
 	color: black;
@@ -146,8 +155,9 @@ a#minecraftbar:hover span#minecraftip {
 
 #footer {
 	border-top: double 2px gray;
-	padding: 20px;
+	padding: 20px 20px 20px 20px;
 	font-family: Arial;
+	text-align: center;
 }
 
 #bsoddiv {
