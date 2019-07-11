@@ -53,7 +53,7 @@ if (lastChar = "#") {
 let mode;
 mode = localStorage.getItem('mode');
 
-if (mode = 'light'){
+if (mode === 'dark'){
 	lightMode();
 }else{
 	darkMode();
