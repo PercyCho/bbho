@@ -19,7 +19,7 @@ setTimeout(function deviceCheck() {
 		}
 	}, 20);
 
-/*function updateTop() {
+function updateTop() {
 	document.getElementById("updating").style.display = "none";
 }
 
@@ -36,18 +36,14 @@ function enterSite(event) {
 	document.getElementById("updatingscreen").style.display = "none";
 }
 
-//window.onhashchange = enterSite(event)
-//undo the commented code above when finished
-//nvm don't change it's not worth it. Use the one below.
-
 var urlTest = window.location.href;
 
 var lastChar = urlTest.slice(-1);
 
-if (lastChar = "#") {
+if (lastChar === "#") {
 	enterSite(0);
 }
-*/
+
 //make sure to fix...all of that
 
 let mode;
