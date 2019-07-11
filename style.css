@@ -133,6 +133,13 @@ a#minecraftbar:hover span#minecraftip {
 	margin: 30px 50px; /*cough cough Dec. 18 cough cough*/
 }
 
+.hometext {
+	font-family: Arial;
+	color: black;
+	font-size: 24px; /* my numbers usually have meanings to them...*/
+	margin: 30px 50px; /*cough cough Dec. 18 cough cough*/
+}
+
 #darkmode {
 	display: inline-block;
 	position: absolute;

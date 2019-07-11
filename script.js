@@ -1,10 +1,10 @@
 function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
+	var start = new Date().getTime();
+	for (var i = 0; i < 1e7; i++) {
+		if ((new Date().getTime() - start) > milliseconds){
+			break;
+		}
+	}
 }
 
 var w = window.innerWidth;
@@ -12,12 +12,12 @@ var h = window.innerHeight;
 var ratio = h-w;
 
 setTimeout(function deviceCheck() {
-		if (ratio > 0) {
-			document.getElementById("mobilemessage").style.display = "block";
-			document.getElementById("bsod").style.display = "none";
-			document.getElementById("updating").style.display = "none";
-		}
-	}, 20);
+	if (ratio > 0) {
+		document.getElementById("mobilemessage").style.display = "block";
+		document.getElementById("bsod").style.display = "none";
+		document.getElementById("updating").style.display = "none";
+	}
+}, 20);
 
 function updateTop() {
 	document.getElementById("updating").style.display = "none";
@@ -26,9 +26,9 @@ function updateTop() {
 window.addEventListener("keydown", checkKeyPressed, false);
 
 function checkKeyPressed(event) {
-    if (event.keyCode == "56") {
-        document.getElementById("updating").style.display = "block";
-    }
+	if (event.keyCode == "56") {
+		document.getElementById("updating").style.display = "block";
+	}
 }
 
 function enterSite(event) {
@@ -59,6 +59,11 @@ function darkMode() {
 	document.getElementById("title").style.color = "white";
 	document.body.style.backgroundColor = "#040040";
 	document.getElementById("hometext").style.color = "lightgray";
+	var x = document.getElementsByClassName("hometext");
+	var i;
+	for (i = 0; i < x.length; i++) {
+		x[i].style.color = "lightgray";
+	}
 	document.getElementById("subtitle").style.color = "lightgray";
 	document.getElementById("footer").style.color = "lightgray";
 	document.getElementById("menu").style.color = "lightgray";
@@ -75,6 +80,11 @@ function lightMode() {
 	document.getElementById("title").style.color = "black";
 	document.body.style.backgroundColor = "lightblue";
 	document.getElementById("hometext").style.color = "black";
+	var x = document.getElementsByClassName("hometext");
+	var i;
+	for (i = 0; i < x.length; i++) {
+		x[i].style.color = "black";
+	}
 	document.getElementById("subtitle").style.color = "black";
 	document.getElementById("footer").style.color = "black";
 	document.getElementById("menu").style.color = "black";
