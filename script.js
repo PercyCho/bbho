@@ -7,6 +7,7 @@ function sleep(milliseconds) {
 	}
 }
 
+/*
 var w = window.innerWidth;
 var h = window.innerHeight;
 var ratio = h-w;
@@ -18,6 +19,8 @@ setTimeout(function deviceCheck() {
 		document.getElementById("updating").style.display = "none";
 	}
 }, 20);
+*/
+//ehhh maybe not
 
 function updateTop() {
 	document.getElementById("updating").style.display = "none";
