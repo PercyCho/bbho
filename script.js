@@ -47,7 +47,9 @@ if (lastChar === "#") {
 	enterSite(0);
 }
 
-//make sure to fix...all of that
+if ((urlTest.search("omniverse")>-1) || (urlTest.search("universe")>-1) || (urlTest.search("void")>-1) || (urlTest.search("power")>-1) || (urlTest.search("absolute")>-1)){
+	window.location.replace("https://percycho.github.io/bbho/535.html");
+}
 
 let mode;
 mode = localStorage.getItem('mode');
