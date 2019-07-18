@@ -7,6 +7,11 @@ function sleep(milliseconds) {
 	}
 }
 
+var version = "v1.0";
+var year = 2019;
+document.getElementById("version").innerHTML = version;
+document.getElementById("year").innerHTML = year + " so far";
+
 /*
 var w = window.innerWidth;
 var h = window.innerHeight;
